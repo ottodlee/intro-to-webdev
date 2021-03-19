@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Name: Otto Lee
+    Date Created: 3/19/21
+    Most recent revision: 3/19/21
+-->
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+      <header>
+        <h1>Dine & Dash</h1>
+      </header>
+
+        <hr />
+        <nav>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="menu.html">Menu</a></p>
+          <p><a href="contact.html">Contact Us</a></p>
+        </nav>
+        <hr />
+
+        <form action="submit.html" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" name="name"><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email"><br />
+          <label for="phone">Phone:</label>
+          <input type="phoneNumber" name="phone"><br />
+          <label for="reason">Reason for Inquiry:</label>
+
+          <select id="reason" name="reason">
+            <option value="catering" selected>Catering</option>
+            <option value="party">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select><br />
+
+          <label for="info">Additional Information:</label>
+          <textarea id="info" name="info"></textarea>
+
+          <fieldset>
+            <legend>Have you been to the restaurant?</legend>
+            <input type="radio" id="no" name="no" value="no">
+            <label for="no">No</label>
+            <input type="radio" id="yes" name="yes" value="yes">
+            <label for="yes">Yes</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Best days to contact you:</legend>
+            <input type="checkbox" id="monday" name="day_to_contact" value="monday">
+            <label for="monday">M</label>
+            <input type="checkbox" id="tuesday" name="day_to_contact" value="tuesday">
+            <label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" name="day_to_contact" value="wednesday">
+            <label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" name="day_to_contact" value="thursday">
+            <label for="wednesday">Th</label>
+            <input type="checkbox" id="friday" name="day_to_contact" value="friday">
+            <label for="wednesday">F</label>
+          </fieldset>
+
+          <input type="submit" name="Submit" value="Send Request">
+        </form>
+
+        <hr />
+        <footer>
+          <p>1614 Aspen Dr, Carver, MN, 55315</p>
+          <p>555-DIN-DASH</p>
+        </footer>
+        <hr />
+    </body>
+</html>
