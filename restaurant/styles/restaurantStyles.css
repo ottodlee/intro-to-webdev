@@ -1,0 +1,51 @@
+/*
+Creator:  Otto Lee
+Date created:  4/7/21
+Date last modified:  4/9/21
+*/
+
+header  {
+  background-color: #3c6e71;
+  color: #fef9ff;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+header h1 {
+  font-family: 'Mukta', sans-serif;
+}
+
+section {
+  background-color: #f1faee;
+}
+
+footer {
+  background-color: #3c6e71;
+  color: #fef9ff;
+  height: 120px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+/* Navigation Styles */
+nav {
+  border-top: thin #5b7d87 solid;
+  border-bottom: thin #5b7d87 solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+nav .btn {
+  background-color: #5b7d87;
+  color: #fef9ff;
+  margin: 0px 0px 0px 10px;
+}
+
+nav .btn:hover {
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #a8dadc;
+}

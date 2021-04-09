@@ -2,82 +2,183 @@
 <!--
     Name: Otto Lee
     Date Created: 3/19/21
-    Most recent revision: 3/19/21
+    Most recent revision: 4/9/21
 -->
 <html lang="en">
-    <head>
-        <title>Menu</title>
-    </head>
+  <head>
+    <!-- Boostrap metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body>
-      <header>
-        <h1>Dine & Dash</h1>
-      </header>
+    <title>Dine & Dash - Menu</title>
 
-        <nav>
-          <hr />
-          <p><a href="index.html">Home</a></p>
-          <p><a href="menu.html">Menu</a></p>
-          <p><a href="contact.html">Contact Us</a></p>
-          <hr />
-        </nav>
+    <!-- Boostrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Restaurant site styesheet -->
+    <link rel="stylesheet" href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <!-- Hosted Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
 
-        <section>
-          <article id="burger">
-              <p><b>Burger and Fries</b><br />
-              An American Classic!<br />
-              Your choice - with or without cheese<br />
-              Pickle, onion, tomato, and lettuce<br />
-              Served with our famous thick-cut french fries<br />
-              $7.95</p>
-          </article>
-          <article id="hot-dog">
-            <p><b>Hot Dogs and Chips</b><br />
-            A Summer Classic!<br />
-            Your choice - white or wheat bun<br />
-            Relish, mustard, and ketchup<br />
-            Served with our house-made chips<br />
-            $7.95</p>
-          </article>
-          <article id="italian_sausage">
-            <p><b>Italian Sausage and Peppers</b><br />
-            An All-Time Favorite!<br />
-            Your choice - mild or spicy Cole Slaw<br />
-            Served with garlic mashers<br />
-            $10.95</p>
-          </article>
-          </article id="tenderloin_sand">
-            <p><b>Tenderloin Sandwich and Chips</b><br />
-            Really Hits the Spot!<br />
-            Plain or Sesame Seed Bun<br />
-            Pickle, onion, tomato, and lettuce<br />
-            Served with our house-made chips<br />
-            $8.95</p>
-          </article>
-          <article id="house_salad">
-            <p><b>House Salad</b><br />
-            On the Lighter Side<br />
-            Iceberg lettuce, tomatoes, peppers<br />
-            Thousand Island or Ranch Dressing<br />
-            Served with a dinner roll<br />
-            $6.95</p>
-          </article>
-          <article id="brisket_sand">
-            <p><b>Brisket Sandwich and Fries</b><br />
-            A Taste of Texas!<br />
-            Smoked Brisket on thick-cut Texas Toast<br />
-            Cole Slaw<br />
-            Served with our famous thick-cut french fries<br />
-            $7.95</p>
-          </article>
-        </section>
+    <style>
+      .item {
+        text-align: center;
+        font-size: 1.1em;
+      }
+      article {
+        padding-left: 20px;
+        padding-bottom:  20px;
+      }
+      .description, .ingredients, .choice, .options, .includes, .price {
+        text-align: center;
+        font-size: 1em;
+      }
+      .row {
+        padding-bottom: 5px;
+      }
+      section {
+        padding-bottom: 30px;
+        padding-top: 30px;
+      }
+      table.center {
+        margin-left:auto;
+        margin-right:auto;
+      }
+      table {
+        width:200px;
+      }
+      th, tr {
+        text-align: center;
+      }
+      td {
+        width:50px;
+      }
+    </style>
+  </head>
 
-        <footer>
-          <hr />
-          <p>1614 Aspen Dr, Carver, MN, 55315</p>
-          <p>555-DIN-DASH</p>
-          <hr />
-        </footer>
+  <body>
+    <header>
+      <h1>Dine & Dash</h1>
+    </header>
 
-    </body>
+      <nav>
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="menu.html">Menu</a>
+        <a class="btn" href="contact.html">Contact Us</a>
+      </nav>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-lg">
+            <article id="burger">
+              <div class="item"><b>Burger and Fries</b></span></div>
+              <div class="description">An American Classic!</div>
+              <div class="choice">Your choice - with or without cheese</div>
+              <div class="ingredients">Pickle, onion, tomato, and lettuce</div>
+              <div class="includes">Served with our famous thick-cut french fries</div>
+              <div class="price">$7.95</div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-lg">
+            <article id="hot-dog">
+              <div class="item"><b>Hot Dogs and Chips</b></span></div>
+              <div class="description">A Summer Classic!</div>
+              <div class="choice">Your choice - white or wheat bun</div>
+              <div class="ingredients">Relish, mustard, and ketchup</div>
+              <div class="includes">Served with our house-made chips</div>
+              <div class="price">$7.95</div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-lg">
+            <article id="italian_sausage">
+              <div class="item"><b>Italian Sausage and Peppers</b></div>
+              <div class="description">An All-Time Favorite!</div>
+              <div class="choice">Your choice - mild or spicy Cole Slaw</div>
+              <div class="includes">Served with garlic mashers</div>
+              <div class="price">$10.95</div>
+            </article>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-lg">
+            <article id="tenderloin_sand">
+              <div class="item"><b>Tenderloin Sandwich and Chips</b></div>
+              <div class="description">Really Hits the Spot!</div>
+              <div class="choice">Plain or Sesame Seed Bun</div>
+              <div class="ingredients">Pickle, onion, tomato, and lettuce</div>
+              <div class="includes">Served with our house-made chips</div>
+              <div class="price">$8.95</p>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-lg">
+            <article id="house_salad">
+              <div class="item"><b>House Salad</b></div>
+              <div class="description">On the Lighter Side</div>
+              <div class="choice">Your choice - with or without cheese</div>
+              <div class="ingredients">Iceberg lettuce, tomatoes, peppers</div>
+              <div class="options">Thousand Island or Ranch Dressing</div>
+              <div class="includes">Served with a dinner roll</div>
+              <div class="price">$6.95</div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-lg">
+            <article id="brisket_sand">
+              <div class="item"><b>Brisket Sandwich and Fries</b></span></div>
+              <div class="description">A Taste of Texas!</div>
+              <div class="ingredients">Smoked Brisket on thick-cut Texas Toast</div>
+              <div class="options">Cole Slaw</div>
+              <div class="includes">Served with our famous thick-cut french fries</div>
+              <div class="price">$7.95</div>
+            </article>
+          </div>
+        </div>
+        <div class="clear-float"></div>
+      </div>
+
+      <div class="row">
+        <table class="center">
+          <thead>
+            <tr>
+              <th colspan="2">Beverages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Root Beer</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Bottled Water</td>
+              <td>$1.25</td>
+            </tr>
+            <tr>
+              <td>Lemonade</td>
+              <td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Iced Tea</td>
+                <td>$1.25</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>1614 Aspen Dr, Carver, MN, 55315</p>
+      <p>555-DIN-DASH</p>
+    </footer>
+
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
