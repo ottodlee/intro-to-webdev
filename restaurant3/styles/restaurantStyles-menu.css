@@ -1,0 +1,34 @@
+/*
+Creator:  Otto Lee
+Date created:  4/16/21
+Date last modified:  4/16/21
+*/
+
+.item {
+  text-align: center;
+  font-size: 1.1em;
+}
+article {
+  padding-left: 20px;
+  padding-bottom:  20px;
+}
+.description, .ingredients, .choice, .options, .includes, .price {
+  text-align: center;
+  font-size: 1em;
+}
+.row {
+  padding-bottom: 5px;
+}
+table.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+table {
+  width:200px;
+}
+th, tr {
+  text-align: center;
+}
+td {
+  width:50px;
+}

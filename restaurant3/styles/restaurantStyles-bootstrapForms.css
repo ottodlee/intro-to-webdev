@@ -1,0 +1,15 @@
+/*
+Creator:  Otto Lee
+Date created:  4/16/21
+Date last modified:  4/16/21
+*/
+.col-form-label {
+  text-align:right;
+}
+textarea {
+  height: 100%;
+  resize: none;
+}
+form {
+  padding-top:20px;
+}

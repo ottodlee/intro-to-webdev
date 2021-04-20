@@ -38,21 +38,101 @@
       </header>
 
       <nav>
-          <a class="btn" href="index.html">Home</a>
-          <a class="btn" href="menu.html">Menu</a>
-          <a class="btn" href="contact.html">Contact Us</a>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          </li>
+        </ul>
       </nav>
 
-      <section>
-        <article style="text-align:center;" id="home_page_photo">
-          <img src="images/dine_and_dash.jpg">
-        </article>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <!--HOME PAGE GOES HERE-->
+          <section>
+            <article style="text-align:center;" id="home_page_photo">
+              <img src="images/dine_and_dash.jpg">
+            </article>
 
-        <article style="width:400px; margin:auto;" id="restaurant_description">
-        <p>Restaurant Description<br />
-        <span style font-family: 'Mukta', sans-serif;>Dine & Dash</span> is the newest full-service high-tech gourmet dining experience for you and your baby! Simply make a reservation via our mobile app, drop your baby off at the Intake Center, and go relax with a drink in The Lounge while we take care of the rest! We feed your baby the finest freshly prepared organic farm-to-table foods <em>your</em> money can buy! We take care of all the hassle and mess! Once your baby is "All done!", just drop by the Loading Zone for quick and easy pick up. Your baby will be securely stored using the latest technology from Baby Cages™ and entertained with our Smart Multi-Media Light and Sound Experience! All transactions are handled automatically through our mobile app, so you can literally Dine & Dash!<p>
-        </article>
-      </section>
+            <article style="width:400px; margin:auto;" id="restaurant_description">
+            <p>Restaurant Description<br />
+            <span style font-family: 'Mukta', sans-serif;>Dine & Dash</span> is the newest full-service high-tech gourmet dining experience for you and your baby! Simply make a reservation via our mobile app, drop your baby off at the Intake Center, and go relax with a drink in The Lounge while we take care of the rest! We feed your baby the finest freshly prepared organic farm-to-table foods <em>your</em> money can buy! We take care of all the hassle and mess! Once your baby is "All done!", just drop by the Loading Zone for quick and easy pick up. Your baby will be securely stored using the latest technology from Baby Cages™ and entertained with our Smart Multi-Media Light and Sound Experience! All transactions are handled automatically through our mobile app, so you can literally Dine & Dash!<p>
+            </article>
+          </section>
+        </div>
+
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <!--MENU CONTENT GOES HERE-->
+        </div>
+
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <section>
+            <article>
+              <form action="submit.html" method="POST">
+                <div id=inputboxes>
+                  <!-- Name -->
+                  <label class="field" for="name">Name:</label>
+                  <input id="name" type="text" name="name"><br />
+                  <!--Email-->
+                  <label class="field" for="email">Email:</label>
+                  <input id="email"  type="email" name="email"><br />
+                  <!--Phone-->
+                  <label class="field" for="phone">Phone:</label>
+                  <input id="phone" type="phoneNumber" name="phone"><br />
+                  <!--Reason for Inquiry-->
+                  <label class="field" for="reason">Reason for Inquiry:</label>
+                  <select id="reason" name="reason">
+                    <option value="catering" selected>Catering</option>
+                    <option value="party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select><br />
+                  <!-- Additional Info -->
+                  <label class="field" id="additionalinfo" for="info">Additional Information:</label>
+                  <textarea id="info" name="info"></textarea>
+                </div>
+              </article>
+              <!-- Have you been to the restaurant radio input -->
+              <fieldset style="width: 50%;" id="radioinput">
+                <span class="field" id="radiotext">Have you been to the restaurant?</span>
+                <input type="radio" id="no" name="no" value="no">
+                <label for="no">No</label>
+                <input type="radio" id="yes" name="yes" value="yes">
+                <label for="yes">Yes</label>
+              </fieldset>
+              <!-- Best days to contact checkboxes -->
+              <fieldset style="width: 50%;" id="checkboxinput">
+                <span class="field" id="checkboxtext">Best days to contact you:</span>
+                <input type="checkbox" id="monday" name="day_to_contact" value="monday">
+                <label for="monday">M</label>
+                <input type="checkbox" id="tuesday" name="day_to_contact" value="tuesday">
+                <label for="tuesday">T</label>
+                <input type="checkbox" id="wednesday" name="day_to_contact" value="wednesday">
+                <label for="wednesday">W</label>
+                <input type="checkbox" id="thursday" name="day_to_contact" value="thursday">
+                <label for="thursday">Th</label>
+                <input type="checkbox" id="friday" name="day_to_contact" value="friday">
+                <label for="friday">F</label>
+              </fieldset>
+              <!-- Submit button -->
+              <div id="submitbutton">
+                <input type="submit" name="Submit" value="Send Request">
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+
+
+
+
+
+
 
       <footer>
         <p>1614 Aspen Dr, Carver, MN, 55315</p>

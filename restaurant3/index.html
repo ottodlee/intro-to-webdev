@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--
+    Name: Otto Lee
+    Date Created: 3/19/21
+    Most recent revision: 4/9/21
+-->
+<html lang="en">
+  <head>
+    <!-- Boostrap metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- JavaScript file -->
+    <script type="text/JavaScript" src="scripts/restaurant.js"></script>
+
+    <title>Dine & Dash - Home Page</title>
+
+    <!-- Boostrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Restaurant site styesheet -->
+    <link rel="stylesheet" href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles/restaurantStyles-bootstrapForms.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles/restaurantStyles-menu.css" rel="stylesheet" type="text/css" />
+    <!-- Hosted Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap icon font CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <style>
+      /* Image and restaurant description style*/
+      article {
+        padding-top: 20px;
+      }
+      #restaurant_description {
+        padding-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+
+      <div class="container">
+      <noscript><h5>Your browser does not support JavaScript! This site is best viewed with JavaScript enabled.</h5></noscript>
+      <header>
+        <h1>Dine & Dash</h1>
+      </header>
+
+      <!-- Jumbotron panel for opening new location (not a fan)
+      <div class="row">
+        <div class="col-lg-12 col-lg">
+          <article style="text-align:center; font-style:italic; display:hidden;" class="jumobtron">
+            <h3>We are opening a new location! More details coming soon!</h3>
+          </article>
+        </div>
+      </div> -->
+
+      <nav>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="bi bi-house-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Carousel -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h5 class="carouselBanner">We're opening a new location!</h2>
+          </div>
+          <div class="carousel-item">
+            <h5 class="carouselBanner">New seasonal menu with special options for this season!</h2>
+          </div>
+          <div class="carousel-item">
+            <h5 class="carouselBanner">The Drink of the Month is SG Special Brew.</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <!-- Home page -->
+          <section>
+
+            <div class="row">
+              <div class="col-lg-12 col-lg">
+                <article style="text-align:center;" id="home_page_photo">
+                  <img src="images/dine_and_dash.jpg">
+                </article>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 col-lg">
+                <article style="width:400px; margin:auto;" id="restaurant_description">
+                Dine & Dash is the newest full-service high-tech gourmet dining experience for you and your baby! Simply make a reservation via our mobile app, drop your baby off at the Intake Center, and go relax with a drink in The Lounge while we take care of the rest! We feed your baby the finest freshly prepared organic farm-to-table foods <em>your</em> money can buy! We take care of all the hassle and mess! Once your baby is "All done!", just drop by the Loading Zone for quick and easy pick up. Your baby will be securely stored using the latest technology from Baby Cages™ and entertained with our Smart Multi-Media Light and Sound Experience! All transactions are handled automatically through our mobile app, so you can literally Dine & Dash!<p>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <!-- Contact page -->
+          <section>
+              <form class="needs-validation" novalidate name="contactEntry" onreset="resetForm()" onsubmit="extractData()" action="index.html" method="POST">
+                  <!-- Name field -->
+                  <div class="row">
+                    <label for="name" class="col-sm-4 col-form-label">Name:</label>
+                    <div class="form-group col-sm-4">
+                      <input type="text" class="form-control" id="name" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter your first and last name.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Email field -->
+                  <div class="row">
+                    <label for="email" class="col-sm-4 col-form-label">Email:</label>
+                    <div class="form-group col-sm-4">
+                      <input type="email" class="form-control" id="email" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter your email address.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Phone field -->
+                  <div class="row">
+                    <label for="phone" class="col-sm-4 col-form-label">Phone :</label>
+                    <div class="form-group col-sm-4">
+                      <input type="phone" class="form-control" id="phone" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please enter your phone number.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Reason selector -->
+                  <div class="row">
+                    <label for="reason" class="col-sm-4 col-form-label">Reason for Inquiry:</label>
+                    <div class="form-group col-sm-4">
+                      <select class="custom-select" id="reason" name="reason">
+                        <option value="catering" selected>Catering</option>
+                        <option value="party">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Additional info textarea -->
+                  <div class="row">
+                    <label for="info" class="col-sm-4 col-form-label" id="info">Additional Information:</label>
+                    <div class="form-group col-sm-4">
+                      <textarea rows="6" class="form-control" id="info" name="info"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <!-- bootstrap radio and checkbox forms -->
+                    <label for="vistedBefore" class="col-sm-4 col-form-label">Have you been to the restaurant before?</label>
+                      <div class="form-check form-check-inline col-sm-4">
+                        <input class="form-check-input ml-2" type="radio" name="vistedBefore" id="visitedBeforeNo" value="no">
+                        <label class="form-check-label" for="vistedBefore">No
+                        </label>
+                        <input class="form-check-input ml-2" type="radio" name="vistedBefore" id="visitedBeforeYes" value="yes">
+                        <label class="form-check-label" for="vistedBefore">Yes
+                        </label>
+                      </div>
+                  </div>
+
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-form-label" id="radiotext">Best days to contact you:</label>
+                    <div class="form-check col-sm-4 form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="contactDays" id="monday" value="monday">
+                        <label class="form-check-label mr-4" for="monday">M</label>
+                        <input type="checkbox" class="form-check-input" name="contactDays" id="tuesday" value="tuesday">
+                        <label class="form-check-label mr-4" for="tuesday">T</label>
+                        <input type="checkbox" class="form-check-input" name="contactDays" id="wednesday" value="wednesday">
+                        <label class="form-check-label mr-4" for="wednesday">W</label>
+                        <input type="checkbox" class="form-check-input" name="contactDays" id="thursday" value="thursday">
+                        <label class="form-check-label mr-4" for="thursday">Th</label>
+                        <input type="checkbox" class="form-check-input" name="contactDays" id="friday" value="friday">
+                        <label class="form-check-label mr-4" for="friday">F</label>
+                      </div>
+                    </div>
+                    <!-- Submit button -->
+                    <div class="row">
+                      <div class="col text-center">
+                        <input type="submit" class="btn" name="Submit" value="Send Request">
+                      </div>
+                    </div>
+                  </form>
+                </section>
+              </div>
+
+        <div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+         <!-- Menu Page -->
+         <section>
+         <!-- menu row 1 -->
+         <div class="row">
+           <div class="col-lg-4 col-lg">
+             <article id="burger">
+               <div class="item"><b>Burger and Fries</b></span></div>
+               <div class="description">An American Classic!</div>
+               <div class="choice">Your choice - with or without cheese</div>
+               <div class="ingredients">Pickle, onion, tomato, and lettuce</div>
+               <div class="includes">Served with our famous thick-cut french fries</div>
+               <div class="price">$7.95</div>
+             </article>
+           </div>
+
+           <div class="col-lg-4 col-lg">
+             <article id="hot-dog">
+               <div class="item"><b>Hot Dogs and Chips</b></span></div>
+               <div class="description">A Summer Classic!</div>
+               <div class="choice">Your choice - white or wheat bun</div>
+               <div class="ingredients">Relish, mustard, and ketchup</div>
+               <div class="includes">Served with our house-made chips</div>
+               <div class="price">$7.95</div>
+             </article>
+           </div>
+
+           <div class="col-lg-4 col-lg">
+             <article id="italian_sausage">
+               <div class="item"><b>Italian Sausage and Peppers</b></div>
+               <div class="description">An All-Time Favorite!</div>
+               <div class="choice">Your choice - mild or spicy Cole Slaw</div>
+               <div class="includes">Served with garlic mashers</div>
+               <div class="price">$10.95</div>
+             </article>
+           </div>
+         </div>
+         <!-- menu row 2 -->
+         <div class="row">
+           <div class="col-lg-4 col-lg">
+             <article id="tenderloin_sand">
+               <div class="item"><b>Tenderloin Sandwich and Chips</b></div>
+               <div class="description">Really Hits the Spot!</div>
+               <div class="choice">Plain or Sesame Seed Bun</div>
+               <div class="ingredients">Pickle, onion, tomato, and lettuce</div>
+               <div class="includes">Served with our house-made chips</div>
+               <div class="price">$8.95</p></div>
+             </article>
+           </div>
+
+           <div class="col-lg-4 col-lg">
+             <article id="house_salad">
+               <div class="item"><b>House Salad</b></div>
+               <div class="description">On the Lighter Side</div>
+               <div class="choice">Your choice - with or without cheese</div>
+               <div class="ingredients">Iceberg lettuce, tomatoes, peppers</div>
+               <div class="options">Thousand Island or Ranch Dressing</div>
+               <div class="includes">Served with a dinner roll</div>
+               <div class="price">$6.95</div>
+             </article>
+           </div>
+
+           <div class="col-lg-4 col-lg">
+             <article id="brisket_sand">
+               <div class="item"><b>Brisket Sandwich and Fries</b></span></div>
+               <div class="description">A Taste of Texas!</div>
+               <div class="ingredients">Smoked Brisket on thick-cut Texas Toast</div>
+               <div class="options">Cole Slaw</div>
+               <div class="includes">Served with our famous thick-cut french fries</div>
+               <div class="price">$7.95</div>
+             </article>
+           </div>
+         </div>
+         <!-- menu bev table -->
+         <div class="row">
+           <table class="center">
+             <thead>
+               <tr>
+                 <th colspan="2">Beverages</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>Root Beer</td>
+                 <td>$3.00</td>
+               </tr>
+               <tr>
+                 <td>Bottled Water</td>
+                 <td>$1.25</td>
+               </tr>
+               <tr>
+                 <td>Lemonade</td>
+                 <td>$1.00</td>
+               </tr>
+               <tr>
+                   <td>Iced Tea</td>
+                   <td>$1.25</td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+
+        </section>
+         <!-- menu tab end -->
+        </div>
+
+      </div> <!-- tab content -->
+
+
+
+      <footer>
+        <p>1614 Aspen Dr, Carver, MN, 55315</p>
+        <p>555-DIN-DASH</p>
+      </footer>
+      </div> <!-- container div-->
+
+      <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      </body>
+</html>

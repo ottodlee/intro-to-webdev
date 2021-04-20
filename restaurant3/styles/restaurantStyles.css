@@ -1,0 +1,66 @@
+/*
+Creator:  Otto Lee
+Date created:  4/7/21
+Date last modified:  4/9/21
+*/
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
+header  {
+  background-color: #3c6e71;
+  color: #fef9ff;
+  padding: 30px 10px 20px 10px;
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+}
+
+noscript h5 {
+  background-color: #ffd60a;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.carouselBanner {
+  background-color: #f1faee;
+  color: #000000;
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+section {
+  background-color: #f1faee;
+  padding-bottom: 20px;
+}
+
+footer {
+  font-family: 'Mukta', sans-serif;
+  font-weight: medium;
+  background-color: #3c6e71;
+  color: #fef9ff;
+  height: 120px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+/* Navigation Styles */
+nav {
+  font-family: 'Mukta', sans-serif;
+  font-weight: bold;
+  border-top: none;
+  border-bottom: none;
+}
+.nav-tabs > li > a{
+  border: medium none;
+  color: #3c6e71;
+}
+
+.nav-tabs .nav-link.active {
+  background-color:#f1faee;
+  border-bottom:#f1faee;
+  font-weight: bold;
+}
